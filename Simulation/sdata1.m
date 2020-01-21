@@ -1,6 +1,8 @@
+location = 200;
+fault = 1010;
 current = c(:,2:4);
-current(:,4) = 11112;
-current(:,5) = 200;
+current(:,4) = fault;
+current(:,5) = location;
 voltage = v(:,2:4);
 logg = [voltage,current];
 data = xlsread('sdata1');
